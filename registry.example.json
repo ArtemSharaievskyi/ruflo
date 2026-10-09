@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sites": [
+    {
+      "site_id": "00000000-0000-4000-8000-000000000000",
+      "slug": "example-site",
+      "project_path": "<local absolute path>",
+      "state_path": "<local absolute path to the site's .site-state>"
+    }
+  ]
+}

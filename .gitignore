@@ -1,0 +1,13 @@
+node_modules/
+registry.local.json
+state/
+.env
+.env.*
+!.env.example
+*.log
+.claude/
+.claude-flow/
+.swarm/
+.ruvector/
+.ruflo/
+

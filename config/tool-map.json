@@ -1,0 +1,294 @@
+﻿{
+    "schemaVersion":  1,
+    "agencyAgents":  {
+                         "repository":  "https://github.com/msitarzewski/agency-agents",
+                         "ref":  "main",
+                         "commit":  "83294689da3832c0a9f223221148c411fd3eacc0",
+                         "license":  "MIT",
+                         "codexIntegration":  "integrations/codex",
+                         "conversionCommand":  "scripts/convert.sh --tool codex",
+                         "installationCommand":  "scripts/install.sh --tool codex --agent \u003cselected-slugs\u003e",
+                         "installerPathOverride":  "CODEX_AGENTS_DIR",
+                         "projectAgentDirectory":  ".codex/agents",
+                         "preservedSourceDirectory":  ".codex/agency-agents/source",
+                         "sourceLicensePath":  ".codex/agency-agents/source/LICENSE",
+                         "converterSha256":  {
+                                                 "scripts/convert.sh":  "c370a6e9bbea4fbc5b684a614ef9edf540010cf8c9be102a386678b8e8656a8f",
+                                                 "scripts/lib.sh":  "51bb6fb36c4727d2764f770649ab18630f5b91e6bd7c9ef96bb5ed2084f30b44"
+                                             },
+                         "supplementalSources":  [
+                                                     {
+                                                         "repository":  "https://github.com/msitarzewski/agency-agents",
+                                                         "ref":  "main",
+                                                         "commit":  "86a6695d4cee1c9720e2be4fd8ae007f9b6d96ae",
+                                                         "license":  "MIT",
+                                                         "role":  "AI-Generated Code Security Auditor",
+                                                         "sourceInstructionsPath":  ".codex/agency-agents/source/security/security-ai-generated-code-auditor.md",
+                                                         "reason":  "This profile was added after the pinned base commit; the other five requested profiles exist at the base commit."
+                                                     }
+                                                 ]
+                     },
+    "skillsCli":  {
+                      "package":  "skills",
+                      "version":  "1.5.18",
+                      "scope":  "project",
+                      "agent":  "codex",
+                      "copyFiles":  true,
+                      "installCommandPattern":  "npx skills add \u003crepository\u003e --skill \u003cselected names\u003e --agent codex --copy --yes"
+                  },
+    "skills":  [
+                   {
+                       "name":  "impeccable",
+                       "repository":  "https://github.com/pbakaus/impeccable",
+                       "commit":  "ece38d9904b8a619b3f77cab476eacad09c4fb11",
+                       "version":  "4.5.0",
+                       "instructionsPath":  ".agents/skills/impeccable/SKILL.md"
+                   },
+                   {
+                       "name":  "copywriting",
+                       "repository":  "https://github.com/coreyhaines31/marketingskills",
+                       "commit":  "dda3841f0b294e01e93b1541486beefbfab0915e",
+                       "version":  "2.1.0",
+                       "instructionsPath":  ".agents/skills/copywriting/SKILL.md"
+                   },
+                   {
+                       "name":  "copy-editing",
+                       "repository":  "https://github.com/coreyhaines31/marketingskills",
+                       "commit":  "dda3841f0b294e01e93b1541486beefbfab0915e",
+                       "version":  "2.1.0",
+                       "instructionsPath":  ".agents/skills/copy-editing/SKILL.md"
+                   },
+                   {
+                       "name":  "cro",
+                       "repository":  "https://github.com/coreyhaines31/marketingskills",
+                       "commit":  "dda3841f0b294e01e93b1541486beefbfab0915e",
+                       "version":  "2.0.0",
+                       "instructionsPath":  ".agents/skills/cro/SKILL.md"
+                   },
+                   {
+                       "name":  "seo-audit",
+                       "repository":  "https://github.com/coreyhaines31/marketingskills",
+                       "commit":  "dda3841f0b294e01e93b1541486beefbfab0915e",
+                       "version":  "2.0.1",
+                       "instructionsPath":  ".agents/skills/seo-audit/SKILL.md"
+                   },
+                   {
+                       "name":  "site-architecture",
+                       "repository":  "https://github.com/coreyhaines31/marketingskills",
+                       "commit":  "dda3841f0b294e01e93b1541486beefbfab0915e",
+                       "version":  "2.0.0",
+                       "instructionsPath":  ".agents/skills/site-architecture/SKILL.md"
+                   },
+                   {
+                       "name":  "schema",
+                       "repository":  "https://github.com/coreyhaines31/marketingskills",
+                       "commit":  "dda3841f0b294e01e93b1541486beefbfab0915e",
+                       "version":  "2.0.0",
+                       "instructionsPath":  ".agents/skills/schema/SKILL.md"
+                   },
+                   {
+                       "name":  "web-design-guidelines",
+                       "repository":  "https://github.com/vercel-labs/agent-skills",
+                       "commit":  "063bee94c3f4df8453406c830b0a7df0f2860278",
+                       "version":  "1.0.0",
+                       "instructionsPath":  ".agents/skills/web-design-guidelines/SKILL.md"
+                   },
+                   {
+                       "name":  "vercel-react-best-practices",
+                       "repository":  "https://github.com/vercel-labs/agent-skills",
+                       "commit":  "063bee94c3f4df8453406c830b0a7df0f2860278",
+                       "version":  "1.0.0",
+                       "instructionsPath":  ".agents/skills/vercel-react-best-practices/SKILL.md"
+                   },
+                   {
+                       "name":  "transitions-dev",
+                       "repository":  "https://github.com/Jakubantalik/transitions.dev",
+                       "commit":  "3bc58021c69725d8bf42108632ac6cf14f2b1d3c",
+                       "instructionsPath":  ".agents/skills/transitions-dev/SKILL.md"
+                   },
+                   {
+                       "name":  "transitions-polish",
+                       "repository":  "https://github.com/Jakubantalik/transitions.dev",
+                       "commit":  "3bc58021c69725d8bf42108632ac6cf14f2b1d3c",
+                       "instructionsPath":  ".agents/skills/transitions-polish/SKILL.md"
+                   },
+                   {
+                       "name":  "emil-design-eng",
+                       "repository":  "https://github.com/emilkowalski/skills",
+                       "commit":  "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+                       "instructionsPath":  ".agents/skills/emil-design-eng/SKILL.md"
+                   },
+                   {
+                       "name":  "animate",
+                       "repository":  "https://github.com/emilkowalski/skills",
+                       "commit":  "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+                       "instructionsPath":  ".agents/skills/animate/SKILL.md"
+                   },
+                   {
+                       "name":  "review-animations",
+                       "repository":  "https://github.com/emilkowalski/skills",
+                       "commit":  "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+                       "instructionsPath":  ".agents/skills/review-animations/SKILL.md"
+                   },
+                   {
+                       "name":  "pick-ui-library",
+                       "repository":  "https://github.com/emilkowalski/skills",
+                       "commit":  "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+                       "instructionsPath":  ".agents/skills/pick-ui-library/SKILL.md"
+                   },
+                   {
+                       "name":  "gpt-taste",
+                       "repository":  "https://github.com/Leonxlnx/taste-skill",
+                       "commit":  "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+                       "instructionsPath":  ".agents/skills/gpt-taste/SKILL.md"
+                   },
+                   {
+                       "name":  "redesign-existing-projects",
+                       "repository":  "https://github.com/Leonxlnx/taste-skill",
+                       "commit":  "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+                       "instructionsPath":  ".agents/skills/redesign-existing-projects/SKILL.md"
+                   },
+                   {
+                       "name":  "daisyui",
+                       "repository":  "https://github.com/saadeghi/daisyui",
+                       "commit":  "9adbeaa259816be46b98bf497a09cd2ab127e3cf",
+                       "version":  "5.7.x",
+                       "instructionsPath":  ".agents/skills/daisyui/SKILL.md"
+                   }
+               ],
+    "agentSkillMap":  [
+                          {
+                              "agent":  "UI Designer",
+                              "profilePath":  ".codex/agents/ui-designer.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/ui-designer.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/impeccable/SKILL.md",
+                                                 ".agents/skills/gpt-taste/SKILL.md",
+                                                 ".agents/skills/redesign-existing-projects/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "Frontend Developer",
+                              "profilePath":  ".codex/agents/frontend-developer.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/frontend-developer.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/daisyui/SKILL.md",
+                                                 ".agents/skills/pick-ui-library/SKILL.md",
+                                                 ".agents/skills/web-design-guidelines/SKILL.md",
+                                                 ".agents/skills/vercel-react-best-practices/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "Backend Architect",
+                              "profilePath":  ".codex/agents/backend-architect.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/backend-architect.md",
+                              "skillPaths":  [
+
+                                             ]
+                          },
+                          {
+                              "agent":  "UI Finish-Gate Reviewer",
+                              "profilePath":  ".codex/agents/ui-finish-gate-reviewer.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/ui-finish-gate-reviewer.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/impeccable/SKILL.md",
+                                                 ".agents/skills/web-design-guidelines/SKILL.md",
+                                                 ".agents/skills/review-animations/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "Evidence Collector",
+                              "profilePath":  ".codex/agents/evidence-collector.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/evidence-collector.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/web-design-guidelines/SKILL.md",
+                                                 ".agents/skills/vercel-react-best-practices/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "Reality Checker",
+                              "profilePath":  ".codex/agents/reality-checker.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/reality-checker.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/web-design-guidelines/SKILL.md",
+                                                 ".agents/skills/vercel-react-best-practices/SKILL.md",
+                                                 ".agents/skills/security-audit/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "Content Creator",
+                              "profilePath":  ".codex/agents/content-creator.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/content-creator.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/copywriting/SKILL.md",
+                                                 ".agents/skills/copy-editing/SKILL.md",
+                                                 ".agents/skills/cro/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "SEO Specialist",
+                              "profilePath":  ".codex/agents/seo-specialist.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/seo-specialist.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/seo-audit/SKILL.md",
+                                                 ".agents/skills/site-architecture/SKILL.md",
+                                                 ".agents/skills/schema/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "Test Automation Engineer",
+                              "profilePath":  ".codex/agents/test-automation-engineer.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/testing/testing-test-automation-engineer.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/webapp-testing/SKILL.md",
+                                                 ".agents/skills/verification-before-completion/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "Accessibility Auditor",
+                              "profilePath":  ".codex/agents/accessibility-auditor.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/testing/testing-accessibility-auditor.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/webapp-testing/SKILL.md",
+                                                 ".agents/skills/web-design-guidelines/SKILL.md",
+                                                 ".agents/skills/verification-before-completion/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "AI-Generated Code Security Auditor",
+                              "profilePath":  ".codex/agents/ai-generated-code-security-auditor.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/security/security-ai-generated-code-auditor.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/security-audit/SKILL.md",
+                                                 ".agents/skills/verification-before-completion/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "UX Researcher",
+                              "profilePath":  ".codex/agents/ux-researcher.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/design/design-ux-researcher.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/impeccable/SKILL.md",
+                                                 ".agents/skills/cro/SKILL.md",
+                                                 ".agents/skills/ui-ux-pro-max/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "Brand Guardian",
+                              "profilePath":  ".codex/agents/brand-guardian.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/design/design-brand-guardian.md",
+                              "skillPaths":  [
+                                                 ".agents/skills/copy-editing/SKILL.md",
+                                                 ".agents/skills/impeccable/SKILL.md"
+                                             ]
+                          },
+                          {
+                              "agent":  "Image Prompt Engineer",
+                              "profilePath":  ".codex/agents/image-prompt-engineer.toml",
+                              "sourceInstructionsPath":  ".codex/agency-agents/source/design/design-image-prompt-engineer.md",
+                              "skillPaths":  [
+
+                                             ]
+                          }
+                      ]
+}
